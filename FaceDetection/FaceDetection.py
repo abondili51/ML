@@ -16,7 +16,7 @@ for (x,y,w,h) in faces:
 	roi_gray = gray[y:y+h, x:x+w]
 	roi_color = img[y:y+h, x:x+w]
 	
-cv2.imwrite('img.jpg',img)
+cv2.imwrite('FaceDetection_OUTPUT.jpg',img)
 k = cv2.waitKey(30) & 0xff
 #if k == 27:
 	#break
